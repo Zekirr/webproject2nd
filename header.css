@@ -58,43 +58,16 @@ header{
     color: #951717;
 }
 
-.boutonprincipal{
-    display: block;
-    margin-left: 20px;
-    margin-right: 30px;
-    padding: 9px 25px;
-    background-color: #951717;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.boutonprincipal:hover{
-    background-color: #7C1010;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    background-color: #454545;
-    min-width: 20px;
-}
-.dropdown-child a {
+#region {
     color: #ffffff;
-    padding: 20px;
-    text-decoration: none;
-    display: block;
+    border: none;
+    outline: none;
+
 }
 
-.dropdown-child a:hover{
-    transition: all 0.3s ease 0s;
+#region:hover{
     color: #951717;
-}
-
-.dropdown:hover .dropdown-child {
-    display: block;
     transition: 0.3s;
 }
+
+

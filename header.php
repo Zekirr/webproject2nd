@@ -14,12 +14,9 @@
             <li><a href="#">Rotation des champions</a></li>
         </ul>
     </nav>
-    <div class="dropdown">
-        <button class="boutonprincipal">Region</button>
-        <div class="dropdown-child">
-            <a href="#">EUW</a>
-            <a href="#">EUNE</a>
-            <a href="#">NA</a>
-            <a href="#">KR</a>
-        </div>
-    </div>
+    <select id="region">
+        <option value="EUW">EUW</option>
+        <option value="EUNE">EUNE</option>
+        <option value="NA">NA</option>
+        <option value="KR">KR</option>
+    </select>
