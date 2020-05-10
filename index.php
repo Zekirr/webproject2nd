@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+include_once 'API_init.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,21 +11,20 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="header.css">
-
 </head>
-
-<?php include_once "header.php"?>
 
 <body>
 
-<img id="logolp" src="ressources/Noxus_logo.png">
+<?php include_once "header.php"?>
+
+<img id="logolp" src="ressources/Noxus_logo.png" alt="">
 
 <div class="pagecontent">
     <p>Découvrez les stats de vos différentes parties</p>
 </div>
 
-<form class="searchbar">
-    <input type="search" placeholder="Summoner name.." id="searchinput">
+<form class="searchbar" method="post" action="main.php">
+    <label for="searchinput"></label><input type="search" placeholder="Summoner name.." id="searchinput" name="searchinput">
     <button type="submit" id="searchbutton">
         <i class="fas fa-search"></i>
     </button>
@@ -30,7 +32,7 @@
 
 
 <div class="backgroundcontainer">
-    <img id="backgroundimage" src="ressources/noxus_splash.jpg">
+    <img id="backgroundimage" src="ressources/noxus_splash.jpg" alt="">
 </div>
 
 </body>

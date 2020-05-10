@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<?php ?>
 
 <header>
     <a href="index.php"><img id="logo" src="ressources/Noxus_logo.png" alt="logo"></a>

@@ -61,6 +61,7 @@ header{
     border: none;
     outline: none;
     margin-left: 20px;
+    background-color: #242424;
 }
 
 #region:hover{
