@@ -7,11 +7,15 @@
     <script src="https://kit.fontawesome.com/4a87f9d18c.js" crossorigin="anonymous"></script>  <!-- intégration kit d'icônes -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="header.css">
+
 </head>
+
+<?php include_once "header.php"?>
 
 <body>
 
-<img id="logo" src="ressources/Noxus_logo.png">
+<img id="logolp" src="ressources/Noxus_logo.png">
 
 <div class="pagecontent">
     <p>Découvrez les stats de vos différentes parties</p>

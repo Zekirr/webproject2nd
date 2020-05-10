@@ -1,13 +1,8 @@
-<?php ?>
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="header.css">
-</head>
-<body>
+
+
 <header>
-    <div class="logo">
     <a href="index.php"><img id="logo" src="ressources/Noxus_logo.png" alt="logo"></a>
-    </div>
     <nav>
         <ul class="nav_links">
             <li><a href="#">Challengers</a></li>
@@ -20,3 +15,4 @@
         <option value="NA">NA</option>
         <option value="KR">KR</option>
     </select>
+</header>

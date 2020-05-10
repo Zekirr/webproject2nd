@@ -12,9 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #171717;
 }
-
 
 li, a, button{
     font-weight: 500;
@@ -24,22 +22,21 @@ li, a, button{
 }
 
 header{
+    background-color: #171717;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10px;
+    padding: 10px 10px;
+
 }
 
 #logo{
-    max-height: 25%;
-    max-width: 25%;
+    max-height: 20%;
+    max-width: 20%;
     cursor: pointer;
+    justify-content: flex-start;
 }
 
-.logo{
-    float: left;
-
-}
 
 .nav_links{
     list-style: none;
@@ -59,10 +56,11 @@ header{
 }
 
 #region {
+    background-color: #171717;
     color: #ffffff;
     border: none;
     outline: none;
-
+    margin-left: 20px;
 }
 
 #region:hover{
