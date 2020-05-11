@@ -1,0 +1,49 @@
+body {
+    background: #2E2E2E ;
+}
+
+#avatar{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    top: 15%;
+    left: 25%;
+}
+
+#summonername {
+    position: absolute;
+    padding-left: 30px;
+    top: 17.5%;
+    left: 30%;
+    color: #ffffff;
+    font-size: 45px;
+}
+
+
+
+#rank{
+    position: absolute;
+    top: 25%;
+    left: 23.5%;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+table{
+    position: absolute;
+    border: 3px solid #951717;
+    width: 50%;
+    height: 80%;
+    left: 32%;
+    top: 30%;
+}
+table td{
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+table img{
+    max-width: 40px;
+    max-height: 40px;
+}
