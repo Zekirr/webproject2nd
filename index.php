@@ -1,4 +1,10 @@
 <?php
+if(isset($_GET['reg'])){
+    setcookie('region', $_GET['reg'], time() + 365*24*3600, null, null, false, true);
+    $_GET['reg'] = '';
+    header('Location: index.php');
+}
+
 include_once 'API_init.php';
 
 ?>

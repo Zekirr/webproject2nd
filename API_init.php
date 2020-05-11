@@ -6,9 +6,45 @@ use RiotAPI\LeagueAPI\LeagueAPI;
 use RiotAPI\LeagueAPI\Definitions\Region;
 
 //  Initialize the library
-$api = new LeagueAPI([
-    //API key
-    LeagueAPI::SET_KEY    => 'RGAPI-b692c4c9-4c40-4802-82d5-438aa8ea50b1',
-    //Target region
-    LeagueAPI::SET_REGION => Region::EUROPE_WEST,
-]);
+if(isset($_COOKIE['region'])){
+    if($_COOKIE['region'] == 'euw'){
+        $api = new LeagueAPI([
+            //API key
+            LeagueAPI::SET_KEY    => 'RGAPI-968c4be9-5283-4d95-9d4c-407ee3cdd3ef',
+            //Target region
+            LeagueAPI::SET_REGION => Region::EUROPE_WEST,
+        ]);
+    }
+    elseif($_COOKIE['region'] == 'eune'){
+        $api = new LeagueAPI([
+            //API key
+            LeagueAPI::SET_KEY    => 'RGAPI-968c4be9-5283-4d95-9d4c-407ee3cdd3ef',
+            //Target region
+            LeagueAPI::SET_REGION => Region::EUROPE_EAST,
+        ]);
+    }
+    elseif($_COOKIE['region'] == 'na'){
+        $api = new LeagueAPI([
+            //API key
+            LeagueAPI::SET_KEY    => 'RGAPI-968c4be9-5283-4d95-9d4c-407ee3cdd3ef',
+            //Target region
+            LeagueAPI::SET_REGION => Region::NORTH_AMERICA,
+        ]);
+    }
+    elseif($_COOKIE['region'] == 'kr'){
+        $api = new LeagueAPI([
+            //API key
+            LeagueAPI::SET_KEY    => 'RGAPI-968c4be9-5283-4d95-9d4c-407ee3cdd3ef',
+            //Target region
+            LeagueAPI::SET_REGION => Region::KOREA,
+        ]);
+    }
+}
+else{
+    $api = new LeagueAPI([
+        //API key
+        LeagueAPI::SET_KEY    => 'RGAPI-968c4be9-5283-4d95-9d4c-407ee3cdd3ef',
+        //Target region
+        LeagueAPI::SET_REGION => Region::EUROPE_WEST,
+    ]);
+}
