@@ -11,6 +11,11 @@
     font-family: 'coolveticaregular', sans-serif;
 }
 
+section{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 /* enleve le 'X' d'Internet Explorer */
 input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
@@ -49,6 +54,7 @@ body {
     margin: 0;
     padding: 0;
     background: #2E2E2E ;
+    overflow: hidden;
 }
 
 #logolp{

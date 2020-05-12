@@ -23,6 +23,7 @@ include_once 'API_init.php';
 
 <?php include_once "header.php"?>
 
+<section>
 <img id="logolp" src="ressources/Noxus_logo.png" alt="">
 
 <div class="pagecontent">
@@ -40,5 +41,6 @@ include_once 'API_init.php';
 <div class="backgroundcontainer">
     <img id="backgroundimage" src="ressources/noxus_splash.jpg" alt="">
 </div>
+</section>
 
 </body>
