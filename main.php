@@ -13,6 +13,10 @@ if(isset($_POST["searchinput"])){
     $name = $summoner->name;
     $level = $summoner->summonerLevel;
     $pp = $summoner->profileIconId;
+    $entries = $api->getLeagueEntriesForSummoner($summoner->id);
+    $rank = $entries[0]->rank;
+    $league_points = $entries[0]->leaguePoints;
+    $tier = strtolower($entries[0]->tier);
 }
 else{
 //    renvoyer vers la page d'erreur
@@ -34,28 +38,30 @@ else{
 <body>
 <?php include_once "header.php"?>
 
-<div class="summoner_info">
-    <?= DataDragonAPI::getProfileIcon($pp, ['id' => 'avatar']) ?>
-    <span id="summonername"><?= $name ?>: lvl <?= $level ?></span>
-</div>
+<section>
+    <div class="summoner_info">
+        <?= DataDragonAPI::getProfileIcon($pp, ['id' => 'avatar']) ?>
+        <span id="summonername"><?= $name ?>: lvl <?= $level ?>, <?= $tier ?></span>
+    </div>
 
-<img id="rank" src="ressources/diams.png">
+    <img id="tier_img" alt="<?= $tier ?>" src="ressources/<?= $tier ?>.png">
 
-<table>
-    <thead>
-    <tr>
-        <td>Invocateur</td>
-        <td>Winrate</td>
-        <td>Points</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><img src=""> test</td>
-        <td>test</td>
-        <td>test</td>
-    </tr>
-    </tbody>
-</table>
+    <table>
+        <thead>
+        <tr>
+            <td>Invocateur</td>
+            <td>Winrate</td>
+            <td>Points</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src=""> test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 </body>
 </html>
