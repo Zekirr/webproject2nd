@@ -1,10 +1,7 @@
 <?php
 require_once "API_init.php";
 
-$name = '';
-$level = '';
-$pp = '';
-
+//  initialisation du Data Dragon pour récupérer les images, comme la photo de profil du joueur
 use RiotAPI\DataDragonAPI\DataDragonAPI;
 DataDragonAPI::initByCdn();
 
@@ -32,6 +29,7 @@ else{
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 
@@ -39,29 +37,45 @@ else{
 <?php include_once "header.php"?>
 
 <section>
-    <div class="summoner_info">
+    <div id="summoner_info">
         <?= DataDragonAPI::getProfileIcon($pp, ['id' => 'avatar']) ?>
-        <span id="summonername"><?= $name ?>: lvl <?= $level ?>, <?= $tier ?></span>
+        <span id="summonername"><?= $name ?></span>
     </div>
 
-    <img id="tier_img" alt="<?= $tier ?>" src="ressources/<?= $tier ?>.png">
+    <div id="rank">
+        <img id="tier_img" alt="<?= $tier ?>" src="ressources/<?= $tier ?>.png">
+        <span>level</span>
+        <span>KDA</span>
+        <span>diagrammes</span>
+        <span>main champion</span>
+    </div>
 
-    <table>
-        <thead>
-        <tr>
-            <td>Invocateur</td>
-            <td>Winrate</td>
-            <td>Points</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><img src=""> test</td>
-            <td>test</td>
-            <td>test</td>
-        </tr>
-        </tbody>
-    </table>
+    <div id="info_table">
+        <table>
+            <thead>
+            <tr>
+                <td>Invocateur</td>
+                <td>Winrate</td>
+                <td>Points</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img alt="" src=""> test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="empty"></div>
+
+    <div id="footer">
+        <?php include_once "footer.php" ?>
+    </div>
+
 </section>
 </body>
 </html>
+

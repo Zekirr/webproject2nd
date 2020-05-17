@@ -17,6 +17,7 @@ include_once 'API_init.php';
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -41,6 +42,7 @@ include_once 'API_init.php';
 <div class="backgroundcontainer">
     <img id="backgroundimage" src="ressources/noxus_splash.jpg" alt="">
 </div>
+
 </section>
 
 </body>
