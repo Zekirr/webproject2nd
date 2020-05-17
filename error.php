@@ -16,7 +16,7 @@
     <i class="fas fa-exclamation-triangle"></i>
     <p>TEXT</p>
     <div class="line"></div>
-    <label  class="close-btn">Fermer</label>
+    <label  class="close-btn">Ferme</label>
 </div>
 
 
