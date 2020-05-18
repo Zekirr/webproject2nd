@@ -71,10 +71,5 @@ p{
 .close-btn:hover{
     background: red;
     color:white;
-    transition: 0.5s
-;
+    transition: 0.5s;
 }
-
-
-
-

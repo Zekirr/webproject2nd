@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -16,7 +16,7 @@
     <i class="fas fa-exclamation-triangle"></i>
     <p>TEXT</p>
     <div class="line"></div>
-    <label  class="close-btn">Fermer</label>
+    <label class="close-btn">Fermer</label>
 </div>
 
 
