@@ -1,0 +1,65 @@
+/* Intégration de la police d'écriture à l'aide de font squirrel */
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('ressources/font/coolvetica_rg-webfont.woff2') format('woff2'),
+    url('ressources/font/coolvetica_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'coolveticaregular', sans-serif;
+}
+
+body{
+    background: #2E2E2E;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border: medium solid #951717;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 50vw;
+    background-color: #454545;
+    margin: 20px;
+    padding: 20px;
+}
+td, th{
+
+}
+
+tr{
+    height: 50px;
+}
+
+section{
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+#tableau{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#challengers{
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 45px;
+    margin: 3vh 0;
+}
+
+.summonername{
+    text-align: left;
+}
+
+

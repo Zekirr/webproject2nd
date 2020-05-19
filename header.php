@@ -3,7 +3,7 @@
     <div>
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Challengers</a></li>
+                <li><a href="challengers.php">Challengers</a></li>
                 <li><a href="#">Rotation des champions</a></li>
             </ul>
         </nav>
