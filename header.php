@@ -4,7 +4,7 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="challengers.php">Challengers</a></li>
-                <li><a href="#">Rotation des champions</a></li>
+                <li><a href="champrotation.php">Rotation des champions</a></li>
             </ul>
         </nav>
         <select id="region" onchange="location = this.options[this.selectedIndex].value;">
