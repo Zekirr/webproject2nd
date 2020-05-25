@@ -1,0 +1,19 @@
+#footer1{
+    color: white;
+}
+
+#footer2{
+    color: #951717;
+    margin-top: 10px;
+}
+
+footer{
+    background: #171717;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
