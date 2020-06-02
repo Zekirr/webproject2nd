@@ -43,6 +43,10 @@ include_once 'API_init.php';
     <img id="backgroundimage" src="ressources/noxus_splash.jpg" alt="">
 </div>
 
+<div id="footer">
+    <?php include_once "footer.php" ?>
+</div>
+
 </section>
 
 </body>
