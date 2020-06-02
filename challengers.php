@@ -6,6 +6,7 @@ use RiotAPI\DataDragonAPI\DataDragonAPI;
 DataDragonAPI::initByCdn();
 
 $league = $api->getLeagueChallenger('RANKED_SOLO_5x5');
+//print_r($league);
 
 $challengers_LP = [];
 for($i = 0; $i < 300; $i++){
@@ -18,36 +19,33 @@ for($i = 0; $i < 300; $i++){
     array_push($challengers_LP, $challenger_LP);
 }
 sort($challengers_LP);
+$challengers_LP = array_reverse($challengers_LP);
 
 $challengers = [];
+$challengers_test = array_fill(0, 300, 0);
 for($i = 0; $i < 300; $i++){
-    $challenger_LP = $league->entries[$i]->leaguePoints;
-    $winrate = $league->entries[$i]->wins + $league->entries[$i]->losses;
-    $winrate_length = strlen($winrate);
-    $winrate_length = pow(10, $winrate_length);
-    $winrate /= $winrate_length;
-    $challenger_LP += $winrate;
-
-    $position = -1;
     for($j = 0; $j < 300; $j++){
-        if($challengers_LP[$j] == $challenger_LP){
-            $position = $j;
+        $challenger_LP = $league->entries[$j]->leaguePoints;
+        $challenger_name = $league->entries[$j]->summonerName;
+        $winrate = $league->entries[$j]->wins + $league->entries[$j]->losses;
+        $winrate_length = strlen($winrate);
+        $winrate_length = pow(10, $winrate_length);
+        $winrate /= $winrate_length;
+        $challenger_LP += $winrate;
+
+        if($challenger_LP === $challengers_LP[$i] && $challengers_test[$j] === 0){
+            $challengers[$i] = $challenger_name;
+            $challengers_test[$j] = 1;
             break;
         }
     }
-
-    $challengers[$league->entries[$i]->summonerName] = $position;
 }
-$challengers = array_flip($challengers);
-ksort($challengers, SORT_NUMERIC);
-$challengers = array_reverse($challengers);
+
 
 function display_challs($position, $name, $lp, $wins, $losses){
     echo "<tr><td>".$position."</td>";
 
-//    echo DataDragonAPI::getProfileIcon($pp, ['id' => 'avatar']);
-
-    echo "<td>".$name."</td>";
+    echo "<td>"."<a href='main.php?searchinput=".$name."'>".$name."</a>"."</td>";
 
     echo "<td>".$lp." LP</td>";
 

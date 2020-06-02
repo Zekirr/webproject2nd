@@ -5,7 +5,7 @@ require_once __DIR__  . "/vendor/autoload.php";
 use RiotAPI\LeagueAPI\LeagueAPI;
 use RiotAPI\LeagueAPI\Definitions\Region;
 
-$api_key = "RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606";
+$api_key = "RGAPI-b056b76e-9e2e-44ba-a15d-1411dc313074";
 
 //  Initialize the library
 if(isset($_COOKIE['region'])){

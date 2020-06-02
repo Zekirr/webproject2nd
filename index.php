@@ -31,7 +31,7 @@ include_once 'API_init.php';
     <p>Découvrez les stats de vos différentes parties</p>
 </div>
 
-<form class="searchbar" method="post" action="main.php">
+<form class="searchbar" method="get" action="main.php">
     <label for="searchinput"></label><input type="search" placeholder="Summoner name.." id="searchinput" name="searchinput">
     <button type="submit" id="searchbutton">
         <i class="fas fa-search"></i>
