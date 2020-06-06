@@ -13,4 +13,13 @@
 
 body{
     background-color: #2E2E2E;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }

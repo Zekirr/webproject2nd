@@ -6,7 +6,6 @@ use RiotAPI\DataDragonAPI\DataDragonAPI;
 DataDragonAPI::initByCdn();
 
 $league = $api->getLeagueChallenger('RANKED_SOLO_5x5');
-//print_r($league);
 
 $challengers_LP = [];
 for($i = 0; $i < 300; $i++){

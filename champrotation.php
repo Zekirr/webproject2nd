@@ -5,9 +5,14 @@ require_once "API_init.php";
 use RiotAPI\DataDragonAPI\DataDragonAPI;
 DataDragonAPI::initByCdn();
 
+$rotation = $api->getChampionRotations()->freeChampionIds;
 
-
+$champions_names = [];
+for($i = 0; $i <= 14; $i++){
+    $champions_names[$i] = $api->getStaticChampion($rotation[$i])->name;
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,15 +23,21 @@ DataDragonAPI::initByCdn();
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
 </head>
+
 <body>
 <?php include_once "header.php" ?>
 
-<div class="champrotation">
-    <?
-    for ($i = 0; $i <= 14; $i++){
-        $rotation = $api->getChampionRotations()->freeChampionIds;
-        echo DataDragonAPI::getChampionLoading($api->getStaticChampion($rotation[$i])->name);
+<section>
+    <div class="champrotation">
+        <?php
+        for($i = 0; $i <= 14; $i++){
+            echo DataDragonAPI::getChampionLoading($champions_names[$i]);
+        }
+        ?>
+    </div>
 
-    }?>
-</div>
+    <?php include_once "footer.php" ?>
+</section>
+
 </body>
+</html>

@@ -58,9 +58,3 @@ section{
 td, th{
     text-align: left;
 }
-
-.avatar{
-    width: 30px;
-    height: 30px;
-    /*border-radius: 10px;*/
-}
