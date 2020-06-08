@@ -28,9 +28,6 @@ table{
     margin: 20px;
     padding: 20px;
 }
-td, th{
-
-}
 
 tr{
     height: 50px;
@@ -58,8 +55,6 @@ section{
     margin: 3vh 0;
 }
 
-.summonername{
+td, th{
     text-align: left;
 }
-
-

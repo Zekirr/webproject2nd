@@ -5,8 +5,8 @@ require_once "API_init.php";
 use RiotAPI\DataDragonAPI\DataDragonAPI;
 DataDragonAPI::initByCdn();
 
-if(isset($_POST["searchinput"])){
-    $summoner = $api->getSummonerByName($_POST["searchinput"]);
+if(isset($_GET["searchinput"])){
+    $summoner = $api->getSummonerByName($_GET["searchinput"]);
     $name = $summoner->name;
     $level = $summoner->summonerLevel;
     $pp = $summoner->profileIconId;
