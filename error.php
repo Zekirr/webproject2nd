@@ -16,7 +16,7 @@
                 <span id="texte1">Nom du joueur ou region incorrect !</span>
                 <img id="nuage" src="https://img.icons8.com/cotton/500/000000/error-cloud.png"/>
             </section>
-        <span id="texte2">le nom que vous avez saisi comporte des fautes ou n'existe pas !</span>
+        
 
         <?php include_once "footer.php" ?>
         </body>
