@@ -17,7 +17,7 @@ if(isset($_POST["searchinput"])){
 }
 else{
 //    renvoyer vers la page d'erreur
-    echo 'erreur';
+    header("Location: error.php");
 }
 ?>
 

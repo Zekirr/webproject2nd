@@ -8,6 +8,7 @@
 }
 
 footer{
+    height: 10vh;
     background: #171717;
     display: flex;
     justify-content: center;

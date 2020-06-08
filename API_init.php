@@ -10,7 +10,7 @@ if(isset($_COOKIE['region'])){
     if($_COOKIE['region'] == 'euw'){
         $api = new LeagueAPI([
             //API key
-            LeagueAPI::SET_KEY    => 'RGAPI-e76f9f6b-77ae-47f6-a635-aa396f148f0f',
+            LeagueAPI::SET_KEY    => 'RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606',
             //Target region
             LeagueAPI::SET_REGION => Region::EUROPE_WEST,
         ]);
@@ -18,7 +18,7 @@ if(isset($_COOKIE['region'])){
     elseif($_COOKIE['region'] == 'eune'){
         $api = new LeagueAPI([
             //API key
-            LeagueAPI::SET_KEY    => 'RGAPI-e76f9f6b-77ae-47f6-a635-aa396f148f0f',
+            LeagueAPI::SET_KEY    => 'RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606',
             //Target region
             LeagueAPI::SET_REGION => Region::EUROPE_EAST,
         ]);
@@ -26,7 +26,7 @@ if(isset($_COOKIE['region'])){
     elseif($_COOKIE['region'] == 'na'){
         $api = new LeagueAPI([
             //API key
-            LeagueAPI::SET_KEY    => 'RGAPI-e76f9f6b-77ae-47f6-a635-aa396f148f0f',
+            LeagueAPI::SET_KEY    => 'RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606',
             //Target region
             LeagueAPI::SET_REGION => Region::NORTH_AMERICA,
         ]);
@@ -34,7 +34,7 @@ if(isset($_COOKIE['region'])){
     elseif($_COOKIE['region'] == 'kr'){
         $api = new LeagueAPI([
             //API key
-            LeagueAPI::SET_KEY    => 'RGAPI-e76f9f6b-77ae-47f6-a635-aa396f148f0f',
+            LeagueAPI::SET_KEY    => 'RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606',
             //Target region
             LeagueAPI::SET_REGION => Region::KOREA,
         ]);
@@ -43,7 +43,7 @@ if(isset($_COOKIE['region'])){
 else{
     $api = new LeagueAPI([
         //API key
-        LeagueAPI::SET_KEY    => 'RGAPI-e76f9f6b-77ae-47f6-a635-aa396f148f0f',
+        LeagueAPI::SET_KEY    => 'RGAPI-72f5cb5b-72c1-47de-b979-0f20dc9d0606',
         //Target region
         LeagueAPI::SET_REGION => Region::EUROPE_WEST,
     ]);
